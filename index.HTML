@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="./style.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
@@ -22,19 +23,19 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>YKY<br>AJANS</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Anasayfa</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">İşlerimiz</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hizmetlerimiz</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ekibimiz</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SSS</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bize Ulaşın</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">Anasayfa</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">İşlerimiz</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">Hizmetlerimiz</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">Ekibimiz</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">SSS</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">Tanıtım Filmi</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>YKY AJANS</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -43,11 +44,26 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Yeni Nesil Reklam Ajansı</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>İşlerimiz.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo"><p>
+      <center> Yeni Nesil Reklam Ajansı </center>
+ </p></h1>
+
+<div class="main">
+<div class="slider">
+<img src="resimler\2021620-D0JEDRLHICBMJZG-reklam-ajansi-ne-yapar.jpg" alt="resim1"width="100%">
+<div class="buton">
+  <i class="fa-solid fa-arrow-left fa-2x" onclick="next()"></i>
+  <i class="fa-solid fa-arrow-right fa-2x" onclick="back()"></i>
+</div>
+</div>
+</div>
+<script src="./app.js"></script>
+<script src="https://kit.fontawesome.com/64301b29d3.js" crossorigin="anonymous"></script>
+
+  <!-- Header -->
+    <h1 class="w3-xxxlarge w3-text-blue"><b>İşlerimiz.</b></h1>
+    <hr style="width:80px;border:5px solid blue" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
@@ -55,12 +71,12 @@ body {font-size:16px;}
     <div class="w3-half">
       <img src="resimler\geleneksel-ajans.gif" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
       <img src="resimler\neden-bir-reklam-ajansi-ile-calismaliyiz.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="resimler\images.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="resimler\digital marketing.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
     </div>
 
     <div class="w3-half">
       <img src="resimler\2021620-D0JEDRLHICBMJZG-reklam-ajansi-ne-yapar.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="resimler\images (1).jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="resimler\seo.png" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
       <img src="resimler\istanbul-dijital-reklam-ajansi-sanal-yonetmen.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
     </div>
   </div>
@@ -76,29 +92,29 @@ body {font-size:16px;}
 
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Hizmetlerimiz.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <img src="resimler\hizmetler.png" style="width:100%" onclick="onClick(this)" alt="hizmetler.jpg">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Hizmetlerimiz.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-bar">
+    <img src="resimler\hizmetler.png" style="width:100%" onclick="onClick(this)" alt="hizmetler.jpg"><br>
 
-    <p>Sosyal Medya Yönetimi</p>
-    <p>Dijital dünyanın var olmasıyla birlikte artık markalar, devasa ücretler ödemeden sosyal medya aracılığıyla büyük kitlelere hitap edebiliyor.
+   <br><p>Sosyal Medya Yönetimi</p>
+    <br><p>Dijital dünyanın var olmasıyla birlikte artık markalar, devasa ücretler ödemeden sosyal medya aracılığıyla büyük kitlelere hitap edebiliyor.</p>
  YKY Ajans olarak öncelikle Instagram profilinizi ve hedef kitlenizi analiz ederek neler yapabileceğimizi, markanıza neler katabileceğimizi planlıyoruz. Daha sonra sizin de isteklerinizle birlikte Instagram sayfanızı trendleri ve güncel olayları takip ederek kısa sürede büyütüyoruz.</p>
- <p>Dijital Reklam Yönetimi</p>  
- <p>Reklamların ürün ve hizmetlerinizin pazarlanmasında kilit nokta olduğunu düşünüyoruz. Reklam çeşitlerini, her markaya uygun şekilde oluşturuyoruz.
+ <br><p ><a href ="https://www.albertsolino.com/blog/dijital-reklam-ajansi-nedir/" tar>Dijital Reklam Yönetimi</a></p>  
+ <br><p>Reklamların ürün ve hizmetlerinizin pazarlanmasında kilit nokta olduğunu düşünüyoruz. Reklam çeşitlerini, her markaya uygun şekilde oluşturuyoruz.
 Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyoruz. Sonucunda markanızın bilinirliği ve satışları artmış oluyor.
      Unutmayın! YKY Ajans, dijital dünyada reklam bütçenizi en doğru şekilde kullanmanızı sağlar.</p>
-     <p>Web Sitesi Tasarımı</p> 
-     <p>Müşterilerimize yenilikçi, kullanıcı dostu ve yaratıcı tasarımlar sunmaktayız. Daha önce birçok farklı sektörde gerçekleştirdiğimiz özel tasarım ve yazılımlı web sitelerle müşterilerimizin ihtiyaçlarını karşıladık.</p> 
-     <p>Fotoğraf ve Video Çekimi</p>
-     <p>YKY Reklam Ajansı olarak video ve fotoğraf çekimi adına A'dan Z'ye tüm ihtiyaçlarınıza nitelikli, sıra dışı ve profesyonel çözümler sunuyoruz. Bu çözümler arasında reklam filmi, kurumsal tanıtım filmleri, dijital ve sosyal medya filmleri, drone ile hava çekimleri yer almaktadır.</p>
+     <br><p>Web Sitesi Tasarımı</p> 
+     <br><p>Müşterilerimize yenilikçi, kullanıcı dostu ve yaratıcı tasarımlar sunmaktayız. Daha önce birçok farklı sektörde gerçekleştirdiğimiz özel tasarım ve yazılımlı web sitelerle müşterilerimizin ihtiyaçlarını karşıladık.</p> 
+     <br><p>Fotoğraf ve Video Çekimi</p>
+     <br><p>YKY Reklam Ajansı olarak video ve fotoğraf çekimi adına A'dan Z'ye tüm ihtiyaçlarınıza nitelikli, sıra dışı ve profesyonel çözümler sunuyoruz. Bu çözümler arasında reklam filmi, kurumsal tanıtım filmleri, dijital ve sosyal medya filmleri, drone ile hava çekimleri yer almaktadır.</p>
 
     </div>
   
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Ekibimiz.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Alanında Seçkin, Deneyimli ve Dinamik Ekibimizle Tanışın.</p>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Ekibimiz.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Alanında Seçkin, Deneyimli ve Dinamik Ekibimizle Tanışın.</p><br>
   </div>
 
   <!-- The Team -->
@@ -107,7 +123,7 @@ Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyor
       <div class="w3-light-grey">
         <img src="resimler/Alan-Fletcher.png" alt="John" style="width:100%">
         <div class="w3-container">
-          <h3> Alan Fletcher</h3>
+          <h3> <a href="https://en.wikipedia.org/wiki/Alan_Fletcher_(graphic_designer)" tar>Alan Fletcher </a></h3>
           <p class="w3-opacity">CEO</p>
           <p>Tipografinin gücünü en etkili şekilde kullanan tasarımcıların başında gelmektedir. İngiliz tasarım dünyasının “babası” olarak adlandırılmaktadır. Tasarımlarında kullandığı ilgi çekici renkler, vurgular ve tipografi sanatı ile var olan düzenli tasarım algısını yıkmıştır.</p>
         </div>
@@ -117,7 +133,7 @@ Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyor
       <div class="w3-light-grey">
         <img src="resimler\David-Carson.jpg" alt="Jane" style="width:100%">
         <div class="w3-container">
-          <h3>Bradbury Thompson</h3>
+          <h3> <a href="https://en.wikipedia.org/wiki/Bradbury_Thompson" tar>Bradbury Thompson </a></h3>
           <p class="w3-opacity">Tasarımcı</p>
           <p>Grafik tasarımcılığı konusunda öncü bir isimdir. Tasarım öğelerinin çoğunu tasarımlarında bir arada kullanmaya hevesli olan Bradbury Thompson, basılı sayfaların sınırlarını zorlayan, fotoğrafçılara ilham veren, farklı renk ve tiplerle katmanlama, kesme, yapıştırma ile deneme yaparak tüm farklılıkları bir tasarımın içinde kullanabilen bir tasarımcıdır.</p>
         </div>
@@ -127,7 +143,7 @@ Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyor
       <div class="w3-light-grey">
         <img src="resimler\Bradbury-Thompson.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
-          <h3>Lubalin</h3>
+          <h3> <a href="https://en.wikipedia.org/wiki/Herb_Lubalin" tar>Lubalin</a> </h3>
           <p class="w3-opacity">Art Direktör</p>
           <p>Logo tasarımlarında sembol ve şekiller yerine fontları özel olarak tasarlayarak oluşturan Lubalin bu konudaki en önemli kilometre taşlarından biridir. Eserleri yıllarca konuşulan sanatçı kariyerinde sayfa tasarımları da yapmış. Aynı zaman Lubalin meşhur Avant Garde fontunun da yaratıcısı.</p>
         </div>
@@ -137,8 +153,8 @@ Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyor
 
   <!-- Packages / Pricing Tables -->
   <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>SSS</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>SSS</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p>1. YKY Ajans’ın çalışma yöntemi nasıldır?</p>
     <p>Müşterilerimizin ihtiyaçlarını anlamak için öncelikle detaylı bir analiz yaparız, ardından özelleştirilmiş stratejiler geliştirir, uygulama aşamasında sürekli geri bildirim ve optimizasyon yaparız.</p>
     <p>2. YKY Ajanshangi hizmetleri sunuyor?</p>
@@ -148,36 +164,17 @@ Yaratıcı ve doğru reklamlar ile hedef kitlenizi minimum bütçeyle yakalıyor
 
 </div>
 
-  
-        
+<div class="w3-container" id="packages" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-blue"><b>Tanıtım Filmimize Göz Atın.</b></h1>
+  <hr style="width:50px;border:5px solid blue" class="w3-round">
 
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Bize Ulaşın.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Formu doldurun ve bize detayları bildirin.</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>İsim Soyisim</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>E-mail</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Mesaj</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Mesaj Gönder</button>
-    </form>  
-  </div>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/results?search_query=html+youtube+video+ekleme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-white w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
 
 <script>
 // Script to open and close sidebar
